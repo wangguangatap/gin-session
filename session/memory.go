@@ -18,7 +18,7 @@ type MemorySession struct {
 /*
 * 构造函数创建实例化
 */
-func CreateMemorySession(id string)*MemorySession{
+func NewMemorySession(id string)*MemorySession{
 	return &MemorySession{
 		SessionId: id,
 		Data:      make(map[string]interface{},4),

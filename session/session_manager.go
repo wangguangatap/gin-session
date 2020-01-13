@@ -8,6 +8,6 @@ GetSession()		获取session
 */
 type SessionManager interface {
 	Init(Addr string,options ...string)error
-	CreateSession() (Session,error)
-	GetSession(sessionId string)(Session,error)
+	CreateSession() interface{}
+	GetSession(sessionId string)(interface{},error)
 }
